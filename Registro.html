@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <title>Registrar</title>
+     
+</head>
+        
+<body>
+        
+        
+<h1 style="text-align: center;">Registro</h1>
+
+        <div class="row">
+        <div class= " col-md-3"></div>
+        <div class= " col-md-6">
+        <form asp-action="RegistroCrear">
+          
+                        <div class= " form-group">
+                        <label asp-for="Nombres" class="control-label">Nombres:</label><br/>
+                        <input asp-for="Nombres" class="form-control" type="text"/><br/>
+                        </div>
+        
+                        <div class="form-group">
+                        <label asp-for="Apellidos">Apellidos:</label>
+                        <input type="Text" class="form-control" asp-for="Apellidos">
+                        </div>
+
+                        <div class="form-group">
+                        <label asp-for="DNI" class="control-label">DNI: </label>
+                        <input  asp-for="DNI" class="form-control"/>
+                        </div>
+
+                        <div class="form-group">
+                        <label asp-for="Edad" class="control-label">Edad: </label>
+                        <input  asp-for="Edad" class="form-control"/>
+                        </div>
+
+                        <div class="form-group">
+                        <label asp-for="Telefono" class="control-label">Telefono: </label>
+                        <input  asp-for="Telefono" class="form-control"/>
+                        </div>
+
+
+                        <div class= " form-group">
+                        <label asp-for="correo" class="control-label">Cooreo Electrónico:</label><br/>
+                        <input asp-for="correo" class="form-control" type="email"/><br/>
+                        </div>
+
+
+                        <div class="form-group">
+                        <label asp-for="crearcontraseña" class="control-label">Crear Contraseña: </label>
+                        <input  asp-for="crearcontraseña" class="form-control"/>
+                        </div>
+
+                        <div class="form-group">
+                        <label asp-for="Pais">Pais:</label>
+                        <select  asp-for="Pais" name="área" class="form-control">
+        
+                            <option value="e">Argentina</option>
+                            <option value="a">Brasil</option>
+                            <option value="c">Bolivia</option>
+                            <option value="c">Colombia</option>
+                            <option value="l">Dubai</option>
+                            <option value="m">Perú</option>
+                            <option value="o">México</option>
+
+                        </select>
+                    </div>
+        
+                        <label for="condiciones">Acepta las <a href="pagina_condiciones.html">Terminos</a> 
+                        y condiciones</label>
+                        <input type="checkbox" name="condiciones" />
+        
+                <input type="submit" value="Registrar" class="btn btn-primary" />
+                </form>
+         
+        </div>
+</body>
